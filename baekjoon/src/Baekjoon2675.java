@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Baekjoon2675 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		for (int tc = 1; tc <= T; tc++) {
+			int replay = sc.nextInt();
+			String word = sc.next();
+			StringBuilder sb = new StringBuilder();
+			for (int i = 0; i < word.length(); i++) {
+				for (int j = 0; j < replay; j++) {
+					sb.append(word.charAt(i));
+				}
+			}
+			System.out.println(sb);
+		}
+	}
+}
