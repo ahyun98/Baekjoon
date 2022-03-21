@@ -14,7 +14,7 @@ public class Baekjoon1747 {
 			}
 			if(primecheck(ans)) {
 				ansstr = Integer.toString(ans);
-				if(felindrom(ansstr)) {
+				if(pelindrom(ansstr)) {
 					System.out.println(ans);
 					break;
 				}
@@ -31,7 +31,7 @@ public class Baekjoon1747 {
 		return true;
 	}
 	
-	public static boolean felindrom(String str) {
+	public static boolean pelindrom(String str) {
 		for (int i = 0; i < str.length()/2; i++) {
 			if(str.charAt(i)!=str.charAt(str.length()-1-i)) {
 				return false;
