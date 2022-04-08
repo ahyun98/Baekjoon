@@ -28,4 +28,5 @@ public class Permutation {
 	    arr[depth] = arr[i];
 	    arr[i] = temp;
 	}
+	
 }
